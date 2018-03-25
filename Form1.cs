@@ -67,7 +67,7 @@ namespace TestApp
             input1 = double.Parse(valueOne.Text);
             input2 = double.Parse(valueTwo.Text);
 
-            answer = input1 / input2;
+            answer = Math.Round(input1 / input2, 2);
 
             label1.Text = answer.ToString();
         }
