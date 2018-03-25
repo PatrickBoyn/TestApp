@@ -22,14 +22,7 @@ namespace TestApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            input1 = int.Parse(valueOne.Text);
-            input2 = int.Parse(valueTwo.Text);
-
-            answer = input1 + input2;
-
-            label1.Text = answer.ToString();
-            
+            addition();   
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -38,6 +31,16 @@ namespace TestApp
             input2 = int.Parse(valueTwo.Text);
 
             answer = input1 - input2;
+
+            label1.Text = answer.ToString();
+        }
+
+        private void addition()
+        {
+            input1 = int.Parse(valueOne.Text);
+            input2 = int.Parse(valueTwo.Text);
+
+            answer = input1 + input2;
 
             label1.Text = answer.ToString();
         }
