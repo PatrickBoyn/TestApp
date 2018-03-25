@@ -30,6 +30,11 @@ namespace TestApp
             subtraction();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            multiplacation();
+        }
+
         private void addition()
         {
             input1 = double.Parse(valueOne.Text);
@@ -39,12 +44,22 @@ namespace TestApp
 
             label1.Text = answer.ToString();
         }
+
         private void subtraction()
         {
             input1 = double.Parse(valueOne.Text);
             input2 = double.Parse(valueTwo.Text);
 
             answer = input1 - input2;
+
+            label1.Text = answer.ToString();
+        }
+        private void multiplacation()
+        {
+            input1 = double.Parse(valueOne.Text);
+            input2 = double.Parse(valueTwo.Text);
+
+            answer = input1 * input2;
 
             label1.Text = answer.ToString();
         }
