@@ -21,6 +21,13 @@ namespace TestApp
         {
             int input1, input2, answer;
 
+            input1 = int.Parse(valueOne.Text);
+            input2 = int.Parse(valueTwo.Text);
+
+            answer = input1 + input2;
+
+            label1.Text = answer;
+
         }
     }
 }
