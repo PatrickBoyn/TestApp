@@ -16,9 +16,9 @@ namespace TestApp
         {
             InitializeComponent();
         }
+
         double input1, input2;
         double answer;
-
 
         private void button1_Click(object sender, EventArgs e)
         {
