@@ -26,8 +26,14 @@ namespace TestApp
             input2 = int.Parse(valueTwo.Text);
 
             answer = input1 + input2;
-
-            label1.Text = answer.ToString();
+            if(input1.GetType() == typeof(int))
+            {
+                label1.Text = answer.ToString();
+            }
+            else
+            {
+                label1.Text = "Please enter a string. ";
+            }
             
         }
     }
