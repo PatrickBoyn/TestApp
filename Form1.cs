@@ -25,8 +25,12 @@ namespace TestApp
             input2 = int.Parse(valueTwo.Text);
 
             answer = input1 + input2;
-
-            label1.Text = answer;
+            if(input1 || input2 == GetType(23){
+                label1.Text = answer.ToString();
+            }else{
+                label1.Text = "Please enter in a number. ";
+            }
+            
 
         }
     }
