@@ -19,17 +19,15 @@ namespace TestApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int input1, input2, answer;
+            string input1, input2;
+            int answer;
 
-            input1 = int.Parse(valueOne.Text);
-            input2 = int.Parse(valueTwo.Text);
+            input1 = valueOne.Text;
+            input2 = valueTwo.Text;
 
-            answer = input1 + input2;
-            if(input1 || input2 == typeof(Int32){
-                valueOne.Text = answer.ToString();
-            }else{
-                valueTwo.Text = "Please enter in a number. ";
-            }
+            answer = int.Parse(input1 + input2);
+
+            label1.Text = answer.ToString();
             
 
         }
