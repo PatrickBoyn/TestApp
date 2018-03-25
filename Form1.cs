@@ -16,11 +16,11 @@ namespace TestApp
         {
             InitializeComponent();
         }
+        int input1, input2;
+        int answer;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int input1, input2;
-            int answer;
 
             input1 = int.Parse(valueOne.Text);
             input2 = int.Parse(valueTwo.Text);
