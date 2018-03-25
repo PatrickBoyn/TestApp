@@ -19,6 +19,7 @@ namespace TestApp
         int input1, input2;
         int answer;
 
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -26,15 +27,19 @@ namespace TestApp
             input2 = int.Parse(valueTwo.Text);
 
             answer = input1 + input2;
-            if(input1.GetType() == typeof(int))
-            {
-                label1.Text = answer.ToString();
-            }
-            else
-            {
-                label1.Text = "Please enter a string. ";
-            }
+
+            label1.Text = answer.ToString();
             
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            input1 = int.Parse(valueOne.Text);
+            input2 = int.Parse(valueTwo.Text);
+
+            answer = input1 - input2;
+
+            label1.Text = answer.ToString();
         }
     }
 }
