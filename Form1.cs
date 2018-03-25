@@ -16,8 +16,8 @@ namespace TestApp
         {
             InitializeComponent();
         }
-        int input1, input2;
-        int answer;
+        double input1, input2;
+        double answer;
 
 
         private void button1_Click(object sender, EventArgs e)
@@ -32,8 +32,8 @@ namespace TestApp
 
         private void addition()
         {
-            input1 = int.Parse(valueOne.Text);
-            input2 = int.Parse(valueTwo.Text);
+            input1 = double.Parse(valueOne.Text);
+            input2 = double.Parse(valueTwo.Text);
 
             answer = input1 + input2;
 
@@ -41,8 +41,8 @@ namespace TestApp
         }
         private void subtraction()
         {
-            input1 = int.Parse(valueOne.Text);
-            input2 = int.Parse(valueTwo.Text);
+            input1 = double.Parse(valueOne.Text);
+            input2 = double.Parse(valueTwo.Text);
 
             answer = input1 - input2;
 
