@@ -16,5 +16,11 @@ namespace TestApp
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int input1, input2, answer;
+
+        }
     }
 }
